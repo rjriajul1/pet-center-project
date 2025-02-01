@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -14,36 +14,122 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- tailwind and daisyui CDN -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind and daisyui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <script>
-            tailwind.config = {
-              theme: {
+    <script>
+        tailwind.config = {
+            theme: {
                 extend: {
-                  colors: {
-                    clifford: '#da373d',
-                  }
+                    colors: {
+                        clifford: '#da373d',
+                    }
                 }
-              }
             }
-          </script>
-          <style>
-            .sora-font{
-                font-family: "Sora", serif;
-            }
-            .adl-font{
-                font-family: "ADLaM Display", serif;
+        }
+    </script>
+    <style>
+        .sora-font {
+            font-family: "Sora", serif;
+        }
 
-            }
-          </style>
-        
+        .adl-font {
+            font-family: "ADLaM Display", serif;
+
+        }
+        .backgrand-img{
+            background-image: url('./c1-assets/cat-big.png');
+           
+        }
+    </style>
+
 
 </head>
 
-<body>
+<body class="sora-font">
+    <!-- header section start here -->
+    <header class="">
+         <!-- navbar start here -->
+         <div class="bg-[#48A6A7]">
+          <nav class=" md:container mx-auto  bg-fixed">
+                <div class="navbar ">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class=" lg:hidden mr-4">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24 "
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52  p-2 shadow font-bold">
+                          <li><a>Find a pet</a></li>
+                          <li><a>Breeds</a></li>
+                          <li><a>Contact us</a></li>
+                          
+                        </ul>
+                      </div>
+                      <img src="c1-assets/logo-header.png" alt="">
+                      <h2 class="text-2xl font-bold ml-4 hidden md:block">Browse4 Pets</h2>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 font-bold">
+                          <li><a>Find a pet</a></li>
+                          <li><a>Breeds</a></li>
+                          <li><a>Contact us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end space-x-4">
+                        <i class="fa-solid text-2xl fa-magnifying-glass hidden md:block"></i>
+                      <button class="border-2 border-yellow-400 rounded-lg px-3 py-2 ">Login</button>
+                      <button class="bg-yellow-400 px-3 py-2 rounded-lg  hidden md:block">Register</button>
+                    </div>
+                  </div>
+                </nav>
+            </div>
+          <!-- navbar end here -->
 
+          <!-- banner section start here -->
+           <div class="md:container mx-auto mt-5 ">
+            
+            <!-- text -->
+            <div class="space-y-6 p-2 ">
+                <h1 class="text-3xl md:text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+            <p class="text-gray-500 leading-8 lg:w-1/2 ">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="bg-[#FFDC26] font-bold px-4 py-2 rounded-lg ">Find a Pet</button>
+            </div>
+            <!-- img -->
+            <div class="relative  lg:-top-20 lg:left-[230px] ">
+                <img class="lg:max-w-[2000px] " src="./c1-assets/cat-big.png" alt="">
+            </div>
+            
+           </div>
+           <!-- banner section end here -->
+        
+    </header>
+    <!-- header section end here -->
+
+    <!-- main section start here -->
+    <main>
+     
+    </main>
+    <!-- main section end here -->
+
+    <!-- footer section start here -->
+    <footer>
+
+    </footer>
+    <!-- footer section end here -->
 
 </body>
 
