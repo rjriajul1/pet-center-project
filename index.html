@@ -39,19 +39,55 @@
 
         }
         .backgrand-img{
-            background-image: url('./c1-assets/cat-big.png');
            
+            background-image: url(./c1-assets/cat-big.png);
+           background-repeat: no-repeat;
+           background-position: bottom;
+           object-fit: cover;
+           background-size: contain;
+          	
+        }
+        .button{
+            width: 120px;
+            transform: width;
+        }
+        .button:hover{
+            width: 300px;
+            transition: 1s ease-in-out;
+            background-color: blue;
+            color: white;
+            font-size: 25px;
+        }
+       
+               
+        ul li a:hover{
+            color: white;
+        }
+        #card:hover{
+
+            background-image: linear-gradient(to top,#FCC6FF,#FFE6C9);
+          
+           
+        }
+        
+       
+        @media screen and (max-width:425px) {
+             .backgrand-img{
+                background-position: center;
+
+               
+             }
         }
     </style>
 
 
 </head>
 
-<body class="sora-font">
+<body class="sora-font ">
     <!-- header section start here -->
     <header class="">
          <!-- navbar start here -->
-         <div class="bg-[#48A6A7]">
+         <div class="bg-[#48A6A7]  ">
           <nav class=" md:container mx-auto  bg-fixed">
                 <div class="navbar ">
                     <div class="navbar-start">
@@ -100,18 +136,19 @@
           <!-- navbar end here -->
 
           <!-- banner section start here -->
-           <div class="md:container mx-auto mt-5 ">
+           <div class="md:container mx-auto mt-5  backgrand-img  h-[700px]  			  ">
             
             <!-- text -->
-            <div class="space-y-6 p-2 ">
-                <h1 class="text-3xl md:text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+            <div class="space-y-6 p-2 banner ">
+                <h1 class="text-3xl md:text-6xl adl-font">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
             <p class="text-gray-500 leading-8 lg:w-1/2 ">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-            <button class="bg-[#FFDC26] font-bold px-4 py-2 rounded-lg ">Find a Pet</button>
+            <button class="bg-[#FFDC26] font-bold px-4 py-2 rounded-lg button">Find a Pet</button>
+            <div class="  ">
+               
+            </div>
             </div>
             <!-- img -->
-            <div class="relative  lg:-top-20 lg:left-[230px] ">
-                <img class="lg:max-w-[2000px] " src="./c1-assets/cat-big.png" alt="">
-            </div>
+            
             
            </div>
            <!-- banner section end here -->
@@ -121,8 +158,51 @@
 
     <!-- main section start here -->
     <main>
-     
-    </main>
+     <!-- browse categories -->
+      <section class=" -mt-20 md:my-20 md:container mx-auto">
+        <h1 class="text-4xl font-bold adl-font mb-7 p-2">Browse By Categories</h1>
+         <!-- card -->
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 p-2 " >
+            <!-- card one -->
+             <div class="bg-[#F9DF8A] rounded-lg p-4 text-center space-y-4 " id="card">
+               <img class="mx-auto bg-white rounded-full p-2" src="c1-assets/dog-cartoon.png" alt="">
+               <h1 class="text-xl font-bold adl-font">Dog</h1>
+               <p>3 items</p>
+             </div>
+            <!-- card two -->
+             <div class="bg-[#F9DF8A] rounded-lg p-4 text-center space-y-4  " id="card">
+               <img class="mx-auto bg-white rounded-full p-2" src="c1-assets/fish-cartoon.png" alt="">
+               <h1 class="text-xl font-bold adl-font">Fish</h1>
+               <p>3 items</p>
+             </div>
+            <!-- card three -->
+             <div class="bg-[#F9DF8A] rounded-lg p-4 text-center space-y-4 " id="card">
+               <img class="mx-auto bg-white rounded-full p-2" src="c1-assets/cat-cartoon.png" alt="">
+               <h1 class="text-xl font-bold adl-font">Caat</h1>
+               <p>3 items</p>
+             </div>
+            <!-- card four -->
+             <div class="bg-[#F9DF8A] rounded-lg p-4 text-center space-y-4  " id="card">
+               <img class="mx-auto bg-white rounded-full p-2" src="c1-assets/bird-cartoon.png" alt="">
+               <h1 class="text-xl font-bold adl-font">Birds</h1>
+               <p>3 items</p>
+             </div>
+            <!-- card five -->
+             <div class="bg-[#F9DF8A] rounded-lg p-4 text-center space-y-4 " id="card">
+               <img class="mx-auto bg-white rounded-full p-2" src="c1-assets/mouse-cartoon.png" alt="">
+               <h1 class="text-xl font-bold adl-font">Small pet</h1>
+               <p>3 items</p>
+             </div>
+            <!-- card six -->
+             <div class="bg-[#F9DF8A] rounded-lg p-4 text-center space-y-4 " id="card">
+               <img class="mx-auto bg-white rounded-full p-2" src="c1-assets/rabbit-cartoon.png" alt="">
+               <h1 class="text-xl font-bold adl-font">Rabit</h1>
+               <p>3 items</p>
+             </div>
+
+          </div>
+      </section>
+   </main>
     <!-- main section end here -->
 
     <!-- footer section start here -->
